@@ -1,0 +1,30 @@
+# import basic libraries
+import numpy as np 
+import pandas as pd 
+import warnings
+warnings.filterwarnings('ignore')
+
+# import plot libraries
+import seaborn as sns
+sns.set_palette('Set2')
+import matplotlib.pyplot as plt
+%matplotlib inline
+
+# import ml libraries
+from sklearn.metrics import confusion_matrix
+from sklearn.preprocessing import LabelEncoder, MinMaxScaler
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn import linear_model, datasets
+from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
+from sklearn.metrics import accuracy_score
+from sklearn.svm import LinearSVC, SVC
+
+
+
+# categories v1, v4, v8, v9, v11, v12, v16, classLabel
+from sklearn.preprocessing import LabelEncoder
+label = LabelEncoder()
+
+# list number of files
+import os
+print(os.listdir("data"))
